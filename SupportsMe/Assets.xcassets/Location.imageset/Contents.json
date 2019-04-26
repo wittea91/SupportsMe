@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Location_On_Icon_1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "baseline_location_on_white_24pt_2x.png",
       "scale" : "2x"
     },
     {
