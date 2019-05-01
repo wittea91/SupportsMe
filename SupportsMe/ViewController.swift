@@ -12,7 +12,7 @@ import GoogleMaps
 
 
 class GoogleMap: UIViewController {
-
+        
     override func loadView() {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate of Suny Ulster
