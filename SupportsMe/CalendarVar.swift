@@ -1,6 +1,6 @@
 import Foundation
-
 //all variables here are pulled from the system calendar
+//everything declared globally to be referenced by other methods
 let date = Date()
 let calendar = Calendar.current
 

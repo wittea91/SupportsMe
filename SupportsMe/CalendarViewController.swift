@@ -2,16 +2,17 @@ import UIKit
 
 //global dateString variable used to reference the complete date - day, month, year - by other methods
 var dateString = ""
+//eventLib is an eventLibrary used to store all events
+let eventLib = EventLibrary()
 
 class CalendarViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
+    //array of strings for reference to month names
     let months = ["January","February","March","April","May","June",
                   "July","August","September","October","November","December"]
-    
-    let weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-    
+    //array of ints for reference to month lengths - leap year february is ignored
     var monthLengths = [31,28,31,30,31,30,31,31,30,31,30,31]
     
+    //local var for easy reference to current month from system calendar
     var currentMonth = String()
     
     //this is used to show that the user clicked on a certain date. -1 is used to refer to no particular date
@@ -29,6 +30,22 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
     
     @IBOutlet weak var Calendar: UICollectionView!
     @IBOutlet weak var MonthLabel: UILabel!
+    
+    
+    //swipe gesture recognizers - swiping right goes to previous month
+    @IBAction func rightSwipe(_ sender: Any) {
+        PrevMonth((Any).self)
+    }
+    
+    //swiping left goes to next month
+    @IBAction func leftSwipe(_ sender: Any) {
+        NextMonth((Any).self)
+    }
+    
+    //back button to return to L1 screen
+    @IBAction func backToHome(_ sender: Any) {
+        performSegue(withIdentifier: "backToHome", sender: self)
+    }
     
     
     //button to switch to the previous month
@@ -79,15 +96,30 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
         cell.backgroundColor = UIColor.clear
         cell.DateLabel.textColor = UIColor.black
         cell.Circle.isHidden = true
+        circleColor = UIColor.red.cgColor
         
         //changes the cell label to the proper day of the month
         cell.DateLabel.text = "\(indexPath.row + 1)"
     
         
-        //if this cell has today's date (supplied by system calendar), draw a circle around it
+        //if this cell has today's date (supplied by system calendar), draw a red circle around it and change the background color to cyan
         if currentMonth == months[calendar.component(.month, from: date) - 1] && year == calendar.component(.year, from: date) && indexPath.row + 1 == day {
+            cell.backgroundColor = UIColor.cyan
             cell.Circle.isHidden = false
+            circleColor = UIColor.red.cgColor
             cell.DrawCircle()
+        }
+        
+        //check the events library for an event
+        //if the date of an event matches the current cell date, draw a blue circle on this date
+        if(getEventsLibrary().events.count > 0) {
+            for Event in getEventsLibrary().events {
+                if(("\(weekdayString(weekday: weekday)) \(currentMonth) \(indexPath.row + 1) \(year)").elementsEqual(Event.date)) {
+                    cell.Circle.isHidden = false
+                    circleColor = UIColor.blue.cgColor
+                    cell.DrawCircle()
+                }
+            }
         }
         
         //change the background color of a selected cell to indicate use
@@ -101,18 +133,7 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         //set the date string indicating the full date to be displayed on the next screen
-        
-        switch(weekday){
-        case 1: dateString = "Sunday \(currentMonth) \(indexPath.row + 1) \(year)"
-        case 2: dateString = "Monday \(currentMonth) \(indexPath.row + 1) \(year)"
-        case 3: dateString = "Tuesday \(currentMonth) \(indexPath.row + 1) \(year)"
-        case 4: dateString = "Wednesday \(currentMonth) \(indexPath.row + 1) \(year)"
-        case 5: dateString = "Thursday \(currentMonth) \(indexPath.row + 1) \(year)"
-        case 6: dateString = "Friday \(currentMonth) \(indexPath.row + 1) \(year)"
-        case 7: dateString = "Saturday \(currentMonth) \(indexPath.row + 1) \(year)"
-        default: dateString = "\(indexPath.row + 1) \(currentMonth) \(year)"
-        }
-        
+        dateString = "\(weekdayString(weekday: weekday)) \(currentMonth) \(indexPath.row + 1) \(year)"
         
         
         //change this date variable to the selected date
@@ -123,5 +144,42 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
         
         //switch to the next view
         performSegue(withIdentifier: "NextView", sender: self)
+    }
+    
+    
+    //this method writes event classes to an events library, then saves it to disk for persistence
+    func saveEventsLibrary() {
+        do {
+            let fileManager = FileManager.default
+            let documentDir = try fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            saveFile = documentDir.appendingPathComponent("library.bin")
+            let eventData = try NSKeyedArchiver.archivedData(withRootObject: eventLib, requiringSecureCoding: false)
+            try eventData.write(to: saveFile)
+        }
+        catch {
+            print("error saving files")
+        }
+    }
+    
+    //this method returns the events library which is used to store events
+    func getEventsLibrary() -> EventLibrary {
+        saveEventsLibrary()
+        let libraryDataRead = NSData(contentsOf: saveFile!)
+        let lib = NSKeyedUnarchiver.unarchiveObject(with: libraryDataRead! as Data) as! EventLibrary
+        return lib
+    }
+    
+    //the system calendar tracks the weekday using an int 1-7 representing sun-sat. This method converts that int to a string for easy use
+    func weekdayString(weekday: Int) -> String {
+        switch(weekday){
+        case 1: return "Sunday"
+        case 2: return "Monday"
+        case 3: return "Tuesday"
+        case 4: return "Wednesday"
+        case 5: return "Thursday"
+        case 6: return "Friday"
+        case 7: return "Saturday"
+        default: return ""
+        }
     }
 }
