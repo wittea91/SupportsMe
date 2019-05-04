@@ -1034,6 +1034,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground" translatesAutoresizingMaskIntoConstraints="NO" id="eAs-2d-RyR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Campus" translatesAutoresizingMaskIntoConstraints="NO" id="d75-gs-iOZ">
                                 <rect key="frame" x="0.0" y="95" width="375" height="226.00000000000006"/>
                                 <constraints>
@@ -1121,6 +1125,10 @@
                                 <color key="textColor" red="1" green="0.94509803920000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground_2" translatesAutoresizingMaskIntoConstraints="NO" id="1Vr-b3-GiG">
+                                <rect key="frame" x="210" y="0.0" width="165" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.28753569159999998" green="0.28753569159999998" blue="0.28753569159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1243,11 +1251,23 @@
                                     <segue destination="C9G-a9-Omt" kind="presentation" id="ema-b3-yZB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEQ-3H-bfn">
-                                <rect key="frame" x="31" y="539" width="125" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground_2" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-Th-JcV">
+                                <rect key="frame" x="210" y="-4" width="165" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Childcare Website"/>
-                            </button>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground" translatesAutoresizingMaskIntoConstraints="NO" id="JZ7-ea-fal">
+                                <rect key="frame" x="0.0" y="-4" width="240" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-An-NHN">
+                                <rect key="frame" x="16" y="509" width="283" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Childcare Website                         (845) 687-5257
+childrenscenter@sunyulster.edu</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.28753569159999998" green="0.28753569159999998" blue="0.28753569159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -2690,6 +2710,21 @@
                                     <segue destination="C9G-a9-Omt" kind="presentation" id="e0i-pD-egI"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground" translatesAutoresizingMaskIntoConstraints="NO" id="XB4-6Y-kYm">
+                                <rect key="frame" x="0.0" y="-1" width="240" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground_2" translatesAutoresizingMaskIntoConstraints="NO" id="imF-D2-2dY">
+                                <rect key="frame" x="210" y="-1" width="165" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dining Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teF-pX-Rmt">
+                                <rect key="frame" x="69" y="523" width="115" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.28753569159999998" green="0.28753569159999998" blue="0.28753569159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -2794,7 +2829,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLw-my-eRf">
-                                <rect key="frame" x="97" y="360" width="278" height="143"/>
+                                <rect key="frame" x="97" y="351" width="278" height="143"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="143" id="Dwb-Fa-lxN"/>
                                 </constraints>
@@ -2814,6 +2849,21 @@ Vanderlyn Hall, 149B</string>
                                     <segue destination="C9G-a9-Omt" kind="presentation" id="1CA-vg-Sck"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground" translatesAutoresizingMaskIntoConstraints="NO" id="PNi-dS-Afd">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground_2" translatesAutoresizingMaskIntoConstraints="NO" id="ZqU-2i-meH">
+                                <rect key="frame" x="210" y="0.0" width="165" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bookstore Website           (845) 687-5085 sunyulster@bkstr.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbQ-jd-zd2">
+                                <rect key="frame" x="16" y="502" width="171" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.28753569159999998" green="0.28753569159999998" blue="0.28753569159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -2934,6 +2984,14 @@ Vanderlyn Hall, 149B</string>
                                     <segue destination="C9G-a9-Omt" kind="presentation" id="KZM-Df-LvV"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground" translatesAutoresizingMaskIntoConstraints="NO" id="eGf-8B-3ru">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground_2" translatesAutoresizingMaskIntoConstraints="NO" id="qyg-ye-Yuy">
+                                <rect key="frame" x="210" y="0.0" width="165" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.28753569159999998" green="0.28753569159999998" blue="0.28753569159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -3053,6 +3111,14 @@ Vanderlyn Hall, 149B</string>
                                     <segue destination="C9G-a9-Omt" kind="presentation" id="wA1-qe-PwY"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground" translatesAutoresizingMaskIntoConstraints="NO" id="rin-Zt-mH1">
+                                <rect key="frame" x="0.0" y="1" width="240" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground_2" translatesAutoresizingMaskIntoConstraints="NO" id="c2q-J1-k1q">
+                                <rect key="frame" x="210" y="1" width="165" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.28753569159999998" green="0.28753569159999998" blue="0.28753569159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -3177,6 +3243,14 @@ Vanderlyn Hall, 149B</string>
                                     <segue destination="C9G-a9-Omt" kind="presentation" id="yRx-Sc-Yto"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground" translatesAutoresizingMaskIntoConstraints="NO" id="4hq-uW-Ckf">
+                                <rect key="frame" x="0.0" y="-3" width="240" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground_2" translatesAutoresizingMaskIntoConstraints="NO" id="gdX-PL-0rt">
+                                <rect key="frame" x="210" y="-3" width="165" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.28753569159999998" green="0.28753569159999998" blue="0.28753569159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -3281,8 +3355,8 @@ Vanderlyn Hall, 149B</string>
                                     <constraint firstItem="mzs-SE-QW0" firstAttribute="bottom" secondItem="O1t-ev-JXY" secondAttribute="bottom" id="va0-Z8-8S1"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqN-HC-FtS">
-                                <rect key="frame" x="97" y="345" width="278" height="196"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqN-HC-FtS">
+                                <rect key="frame" x="97" y="316" width="278" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="196" id="RhU-I5-ute"/>
                                 </constraints>
@@ -3302,6 +3376,23 @@ Hasbrouck Hall Lobby</string>
                                     <segue destination="C9G-a9-Omt" kind="presentation" id="1UG-bq-Cie"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hEg-Jr-lvN">
+                                <rect key="frame" x="0.0" y="4" width="240" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground_2" translatesAutoresizingMaskIntoConstraints="NO" id="SKx-Es-FTl">
+                                <rect key="frame" x="210" y="4" width="165" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbm-HP-QF2">
+                                <rect key="frame" x="16" y="491" width="319" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Public Safety Website
+(845) 687-5053    	freerw@sunyulster.edu</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.28753569159999998" green="0.28753569159999998" blue="0.28753569159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -3429,6 +3520,21 @@ Senate Gym, SEN 103</string>
                                     </segue>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Dwq-MH-ohu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmallBackground_2" translatesAutoresizingMaskIntoConstraints="NO" id="2Nd-xm-y9q">
+                                <rect key="frame" x="210" y="0.0" width="165" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Health Services Website   (845) 687-5246" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PY3-51-J9h">
+                                <rect key="frame" x="30" y="531" width="218" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.28753569159999998" green="0.28753569159999998" blue="0.28753569159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -3480,6 +3586,8 @@ Senate Gym, SEN 103</string>
         <image name="Portal" width="1259" height="785"/>
         <image name="Profile" width="29" height="29"/>
         <image name="Public Safety" width="450" height="300"/>
+        <image name="SmallBackground" width="502" height="171"/>
+        <image name="SmallBackground_2" width="528" height="225"/>
         <image name="Suny ulster" width="500" height="162"/>
         <image name="Supports" width="524" height="216"/>
         <image name="Supports me logo" width="1082" height="228"/>
@@ -3487,8 +3595,8 @@ Senate Gym, SEN 103</string>
         <image name="background" width="1079" height="1920"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OOy-y1-zpy"/>
-        <segue reference="umr-us-81S"/>
+        <segue reference="BOL-ke-hbz"/>
+        <segue reference="vq2-ll-Wb7"/>
         <segue reference="7ny-Sa-ncu"/>
         <segue reference="Zfb-ps-PqM"/>
     </inferredMetricsTieBreakers>
