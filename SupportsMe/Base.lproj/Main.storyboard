@@ -1288,7 +1288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ven-t5-ayV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607" y="843"/>
+            <point key="canvasLocation" x="-607.20000000000005" y="842.42878560719646"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BWz-tM-gUI">
@@ -3223,7 +3223,7 @@ Vanderlyn Hall, 149B</string>
                                 <rect key="frame" x="0.0" y="58" width="387" height="39"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public Safety" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pq3-Ml-BwM">
-                                        <rect key="frame" x="129" y="6" width="128" height="27"/>
+                                        <rect key="frame" x="129.5" y="6" width="128" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="128" id="CIW-BK-DiW"/>
                                         </constraints>
@@ -3348,7 +3348,7 @@ Hasbrouck Hall Lobby</string>
                                 <rect key="frame" x="0.0" y="58" width="387" height="39"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xny-NV-Jqn">
-                                        <rect key="frame" x="119" y="6" width="148" height="27"/>
+                                        <rect key="frame" x="119.5" y="6" width="148" height="27"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="148" id="GvM-IA-ouX"/>
                                         </constraints>
@@ -3487,9 +3487,9 @@ Senate Gym, SEN 103</string>
         <image name="background" width="1079" height="1920"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hbw-Qv-p5V"/>
+        <segue reference="OOy-y1-zpy"/>
         <segue reference="umr-us-81S"/>
-        <segue reference="Gfo-Ip-YRM"/>
+        <segue reference="7ny-Sa-ncu"/>
         <segue reference="Zfb-ps-PqM"/>
     </inferredMetricsTieBreakers>
 </document>

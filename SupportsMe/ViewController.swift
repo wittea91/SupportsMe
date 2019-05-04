@@ -23,6 +23,9 @@ class GoogleMap: UIViewController {
         view = mapView
         
         
+
+        
+        
         // Creates markers for each building at Suny Ulster
         let Ulstermarker = GMSMarker()
         Ulstermarker.position = CLLocationCoordinate2D(latitude: 41.8515, longitude: -74.1290)
