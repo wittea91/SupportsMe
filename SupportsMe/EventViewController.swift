@@ -54,5 +54,4 @@ class EventViewController: UIViewController {
             print("error saving files")
         }
     }
-    
 }

@@ -1,11 +1,3 @@
-//
-//  EventLibrary.swift
-//  SupportsMe
-//
-//  Created by user150428 on 5/3/19.
-//  Copyright © 2019 Andrew. All rights reserved.
-//
-
 import Foundation
 
 //collections class for events
