@@ -1039,7 +1039,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Campus" translatesAutoresizingMaskIntoConstraints="NO" id="d75-gs-iOZ">
-                                <rect key="frame" x="0.0" y="95" width="375" height="226"/>
+                                <rect key="frame" x="0.0" y="95" width="375" height="226.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225.99999999999994" id="NTk-Ea-AGW"/>
                                 </constraints>
@@ -3156,7 +3156,7 @@ Vanderlyn Hall, 149B</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Portal" translatesAutoresizingMaskIntoConstraints="NO" id="TAq-lj-rd8">
-                                <rect key="frame" x="0.0" y="67" width="375" height="298"/>
+                                <rect key="frame" x="0.0" y="67" width="375.00000000000023" height="298"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="298" id="Utq-ec-C25"/>
                                 </constraints>
@@ -3595,7 +3595,7 @@ Senate Gym, SEN 103</string>
         <image name="background" width="1079" height="1920"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BOL-ke-hbz"/>
+        <segue reference="OOy-y1-zpy"/>
         <segue reference="vq2-ll-Wb7"/>
         <segue reference="7ny-Sa-ncu"/>
         <segue reference="Zfb-ps-PqM"/>
